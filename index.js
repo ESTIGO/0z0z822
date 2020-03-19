@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 
 const Discord = require('discord.js');
-const client = new Discord.Client({ disableEveryone: true });
+const client = new Discord.Client();
 const config = require('./config.json');
 const keyv = require('keyv');
 const colordb = new keyv('sqlite://./db/colors.sqlite');
